@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SortViz</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+		</script>
+
+	<script src="https://kit.fontawesome.com/6c0a7d7ad0.js" crossorigin="anonymous"></script>
+	<a href=""></a>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="top">
+			<h2>SortViz</h2>
+			<a href="https://github.com/Swanand01/sorting-viz" target="_blank">
+				<i class="fab fa-github fa-2x"></i>
+			</a>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 sliders">
+				<label for="array_size">Set array size:</label>
+				<input type="range" class="form-range" name="array_size" id="array_size" min="10" max="50">
+
+				<label for="speed">Set sorting speed:</label>
+				<input type="range" class="form-range" name="speed" id="speed" min="1" max="50">
+			</div>
+			<div class="col-lg-8 main">
+				<div class="bars"></div>
+				<div class="accordion" id="info">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne" id="info_title">
+								How to use:
+							</button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#info_title">
+							<div class="accordion-body" id="info_body">
+								<p>
+								<ol>
+									<li>
+										Select array size.
+									</li>
+									<li>
+										Select sorting speed.
+									</li>
+									<li>
+										Choose a sorting algorithm.
+									</li>
+									<li>Press the New Array button to generate a new array.</li>
+								</ol>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 buttons">
+				<button class="btn btn-outline-primary" id="new_array">New Array</button>
+				<button class="btn btn-outline-light" id="bubble_sort_btn">Bubble Sort</button>
+				<button class="btn btn-outline-light" id="selection_sort_btn">Selection Sort</button>
+				<button class="btn btn-outline-light" id="insertion_sort_btn">Insertion Sort</button>
+				<button class="btn btn-outline-light" id="merge_sort_btn">Merge Sort</button>
+				<button class="btn btn-outline-light" id="quick_sort_btn">Quick Sort</button>
+				<button class="btn btn-outline-light" id="heap_sort_btn">Heap Sort</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="index.js" type="module"></script>
+
+</html>
