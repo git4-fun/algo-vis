@@ -138,7 +138,7 @@ function swap(arr, x, y) {
 }
 
 async function bubbleSort(array) {
-  infoTitle.innerHTML = "Read about Bubble Sort:";
+  infoTitle.innerHTML = "Bubble Sort:";
   infoBody.innerHTML = `
     <p>
         Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are in the intended order.
@@ -185,7 +185,7 @@ async function bubbleSort(array) {
 }
 
 async function selectionSort(array) {
-  infoTitle.innerHTML = "Read about Selection Sort:";
+  infoTitle.innerHTML = "Selection Sort:";
   infoBody.innerHTML = `
     <p>    
         Selection sort is an in-place comparison-based algorithm in which the array is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire list.
@@ -471,7 +471,7 @@ async function partition(arr, l, h) {
 }
 
 async function quickSort(arr, l, h) {
-  infoTitle.innerHTML = "Read about Quick Sort:";
+  infoTitle.innerHTML = "Quick Sort:";
   infoBody.innerHTML = `
     <p>
         Quick Sort is a sorting algorithm that follows the "divide and conquer" approach.
@@ -552,7 +552,7 @@ async function maxHeapify(arr, l, h) {
 }
 
 async function heapSort(arr, h) {
-  infoTitle.innerHTML = "Read about Heap Sort:";
+  infoTitle.innerHTML = "Heap Sort:";
   infoBody.innerHTML = `
     <p>
         Heap Sort is a comparison-based sorting algorithm that utilizes a binary heap data structure to efficiently sort an array in ascending or descending order. 
